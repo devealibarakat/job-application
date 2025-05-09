@@ -10,6 +10,7 @@ the form contain  Your Personal Information
   - Password
   - Skills
   - Availability
+  - other
 
 - **used tags in form:**
   - `<form>` 
