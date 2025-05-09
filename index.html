@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Job Application Form</title>
+    <meta name="description" content="Apply for a position at our company" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <header>
+        <h1>Job Application Form</h1>
+        <p>Enter Your Personal Information</p>
+    </header>
+    <form action="#" method="post">
+        <!-- Full Name Input -->
+    <label for="full_name">Full Name</label>
+    <input type="text" id="full_name" name="full_name" placeholder="Enter Your Full Name" required>
+    <br><br>
+        <!-- Email Input -->
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="example@gmail.com" required>
+    <br><br>
+        <!-- Phone Number Input -->
+    <label for="phone_number">Phone Number</label>
+    <input type="tel" name="phone" id="phone_number" placeholder="+963 xxx xxx xxx">
+    <br><br>
+        <!-- Desired Position Input -->
+    <label for="position">Desired Position</label>
+    <input list="position" type="text" id="position" name="position">
+    <datalist id="position">
+        <option value="Developer">
+        <option value="Designer">
+        <option value="Project Manager">
+    </datalist>
+    <br><br>
+        <!-- linkend url Input -->
+    <label for="linkend_url"> Linkend Profile</label>
+    <input type="url" name="linkend_url" id="linkend_url" placeholder="Enter Your link Profile">
+    <br><br>
+        <!-- Salary Input -->
+    <label for="salary">Salary Expectation</label>
+    <input type="number" id="salary" name="salary" placeholder="Enter Salary Expection" min="10" max="1000">
+    <br><br>
+        <!-- Password Input -->
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="Enter Your password" required>
+    <br><br> 
+        <!-- Cover Lettet Input -->
+    <label for="cover_letter">Cover Letter</label>
+    <br>
+    <textarea name="cover_letter" id="cover_letter" rows="6" cols="100" placeholder="Enter your Cover Letter" required></textarea>
+    <br><br>
+        <!-- Skills checkboxes Inputs -->
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="html"><input type="checkbox" name="skills" value="html" id="html">Html</label>
+        <br>
+        <label for="css"><input type="checkbox" name="skills" value="css" id="css">Css</label>
+        <br>
+        <label for="javascript"><input type="checkbox" name="skills" value="javascript" id="javascript">JavaScript</label>
+        <br>
+        <label for="git"><input type="checkbox" name="skills" value="git" id="git">Git</label>
+        <br>
+        <label for="react"><input type="checkbox" name="skills" value="react" id="react">React</label>
+    </fieldset>
+    <br> <br>
+        <!-- Availability Radio Inputs-->
+    <fieldset>
+        <legend>Availability</legend>
+        <label for="full-time"><input type="radio" id="full-time" name="availability" value="full-time">
+            Full Time
+        </label>
+        <br>
+        <label for="part-time"><input type="radio" id="part-time" name="availability" value="part-time">
+            Part Time
+        </label>
+        <br>
+        <label for="freelance"><input type="radio" id="freelance" name="availability" value="freelance">
+            Freelance
+        </label>
+    </fieldset>
+    <br><br>
+        <!-- Preferred Location Select -->
+    <label for="preferred_location">Preferred Location</label>
+        <select id="preferred_location" name="preferred_location">
+            <option value="remote">Remote </option>
+            <option value="on-site">On-Site</option>
+            <option value="Hybrid">Hybrid</option>
+        </select>
+        <br><br>
+        <!-- CV File Upload -->
+         <label for="cv">Upload CV</label>
+         <input type="file" name="cv_file" id="cv">
+         <!-- hidden input -->
+         <input type="hidden" name="formVersion" value="v1">
+         <!-- submit input -->
+<button type="submit" aria-label="Submit Application Form">Submit Application Form</button>
+    </form>
+  </body>
+</html>
